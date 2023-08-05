@@ -1,0 +1,85 @@
+/* variables */
+$primary-color: #5271FF;
+$secondary-color: #D8D8D8;
+$color-black : #1F2327;
+$color-gray: #ECECEC;
+$color-green : #0ABA08;
+$color-red : #FF5258;
+
+main {
+    .card {
+        margin-bottom: 30px;
+        border: none;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.03);
+        height: calc(100% - 30px);
+
+        .card-header {
+            padding: 18px 20px;
+            border: none;
+            margin: 0;
+            background-color: $color-gray;
+
+            &:first-child {
+                border-radius: 5px 5px 0 0;
+            }
+        }
+
+        .card-body {
+            padding: 20px;
+
+
+        }
+    }
+
+
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.sidebar ul{
+    li{
+        a:focus{
+           
+        }
+        ul{
+           
+            li{
+                a{
+                    padding: 15px 15px 15px 73px;
+                    display: flex;
+                    align-items: center;
+                    &.dropdown-toggle:after{
+                        margin-left: auto;
+                    }
+                }
+                ul{
+                    li{
+                        a{
+                            padding: 15px 15px 15px 83px;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .dropdown{
+            .dropdown-menu{
+                margin-bottom: 0;
+                position: relative !important;
+                transform: none !important;
+                background-color: #000;
+            }
+        }
+    }
+}
+.nav-link:focus{
+    color: #fff;
+}
+
+@media(min-width: 992px){
+    .w-md-50{
+        width: 50% !important;
+    }
+}
